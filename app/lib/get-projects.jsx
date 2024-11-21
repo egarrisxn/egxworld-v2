@@ -4,7 +4,7 @@ const Projects = [
   {
     title: 'Sway Bae Official',
     description:
-      'The place to be for full-time streamer and content creator, Sway Bae. Created exactly as she wanted using Next.js, Sanity, Tailwind CSS, daisyUI, & deployed with Vercel.',
+      'The place to be for full-time streamer and content creator, Sway Bae. Created using Next.js, Sanity, JavaScript, Tailwind CSS, daisyUI, & deployed with Vercel.',
     href: 'https://github.com/egarrisxn/swaybaeofficial',
     years: ['2023', '2024'],
     type: 'project',
@@ -13,7 +13,7 @@ const Projects = [
   {
     title: 'Unofficial Merchandise',
     description:
-      'A fully functional e-commerce store built with users in mind! Leveraging modern web teb technologies like Next.js, Sanity, Stripe, Tailwind CSS, shadcn/ui, & deployed with Vercel.',
+      'A fully functional e-commerce store built with users in mind! Leveraging modern web teb technologies like Next.js,Stripe, Sanity, JavaScript, Tailwind CSS, & deployed with Vercel.',
     href: 'https://github.com/egarrisxn/unofficial-merchandise',
     years: ['2024'],
     type: 'project',
@@ -22,7 +22,7 @@ const Projects = [
   {
     title: '.prod',
     description:
-      'An all-in-one productivity web application to help keep your days in order! Spun up with Next.js, Sanity, Stripe, Tailwind CSS, shadcn/ui, & deployed with Vercel.',
+      'An all-in-one productivity web application to help keep your days in order! Spun up with Next.js, Supabase, TypeScript, Tailwind CSS, shadcn/ui, & deployed with Vercel.',
     href: 'https://github.com/egarrisxn/egxprod',
     years: ['2024'],
     type: 'project',
@@ -32,7 +32,7 @@ const Projects = [
     title: 'ATS Resbuilder',
     description:
       'A simple and professional ATS friendly resume template and more using the likes of Next.js, JavaScript, MDX, Tailwind CSS, & deployed with Vercel.',
-    href: 'https://github.com/egarrisxn/ats-resbuiler',
+    href: 'https://github.com/egarrisxn/ats-resbuilder',
     years: ['2024'],
     type: 'project',
     image: '/projects/resumebuilder.png',
@@ -58,7 +58,7 @@ const Projects = [
   {
     title: 'WebSanity: Website Builder',
     description:
-      'A powerful, user-friendly tool designed to help you create stunning websites effortlessly! Powered by Next.js, Sanity, Tailwind CSS, & deployed with Vercel.',
+      'A powerful, user-friendly tool designed to help you create stunning websites effortlessly! Powered by Next.js, Sanity, JavaScript, Tailwind CSS, & deployed with Vercel.',
     href: 'https://github.com/egarrisxn/websanity-builder',
     years: ['2024'],
     type: 'project',
@@ -76,7 +76,7 @@ const Projects = [
   {
     title: 'EGXWORLD v1',
     description:
-      'My first portfolio / website / whatever you would like to call it. Powered by Next.js, Tailwind CSS, shadcn/ui, & deployed with Vercel.',
+      'My first portfolio / website / whatever you would like to call it. Powered by Next.js, JavaScript, Tailwind CSS, shadcn/ui, & deployed with Vercel.',
     href: 'https://github.com/egarrisxn/egxworld-v1',
     years: ['2023'],
     type: 'project',
@@ -85,7 +85,7 @@ const Projects = [
   {
     title: 'EGXBLOG',
     description:
-      'My personal blog I created as an attempt to write a little more. Spun up by the new Next.js 14, Sanity, Tailwind CSS, shadcn/ui, & deployed with Vercel.',
+      'My personal blog I created as an attempt to write a little more. Spun up by the new Next.js, Sanity, JavaScript, Tailwind CSS, shadcn/ui, & deployed with Vercel.',
     href: 'https://github.com/egarrisxn/egxblog',
     years: ['2023'],
     type: 'project',
