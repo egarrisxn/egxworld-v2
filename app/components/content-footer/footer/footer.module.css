@@ -1,0 +1,12 @@
+.footer {
+  color: var(--fg-2);
+
+  a {
+    color: var(--link);
+    transition: color 0.1s ease-in-out;
+  }
+
+  p {
+    color: var(--neutral);
+  }
+}

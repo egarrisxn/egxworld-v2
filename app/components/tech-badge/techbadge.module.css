@@ -1,0 +1,22 @@
+.techBadge {
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--gap-quarter);
+  margin: 0 0.05rem;
+  padding: 0 var(--gap-half);
+  font-size: 0.9rem;
+  font-weight: 450;
+  border-radius: var(--radius);
+  border: 1px solid var(--link);
+  background-color: var(--bg);
+  color: var(--fg);
+  text-decoration: none !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .techBadge {
+    padding: 0 var(--gap-quarter);
+    font-size: 0.8rem;
+  }
+}

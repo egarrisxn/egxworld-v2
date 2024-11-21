@@ -1,0 +1,69 @@
+---
+title: SSR. The Resurgence of Server-Side Rendering
+description: After years of client-side rendering dominating the scene, SSR is making a strong comeback.
+slug: ssr
+type: post
+date: March 2, 2024
+---
+
+<img
+  src='/posts/ssr/1.jpeg'
+  alt='Image Alt.'
+  style={{minWidth: '280px', maxWidth: '800px', width: '100%'}}
+/>
+
+# The Resurgence of Server-Side Rendering in Web Development
+
+In the ever-evolving landscape of web development, trends come and go, but some make a comeback with renewed relevance and importance. One such trend is server-side rendering (SSR). After years of client-side rendering dominating the scene, SSR is making a strong comeback. But why is this happening, and what makes SSR so appealing in today's web development environment?
+
+## What is Server-Side Rendering?
+
+Server-Side Rendering (SSR) refers to the process where a web server generates the full HTML for a page and sends it to the client. This is in contrast to client-side rendering (CSR), where JavaScript running in the browser generates the HTML. With SSR, the browser receives a fully rendered page, which can be displayed to the user more quickly, as it doesn't rely on downloading and executing JavaScript first.
+
+## How SSR Works
+
+When a request is made to a server for a particular page:
+
+1. The server processes the request, executes the necessary logic, and generates the HTML content for the page.
+2. The server sends this HTML back to the client (browser).
+3. The browser displays the page, and any additional JavaScript or assets are loaded subsequently.
+
+This process can be particularly beneficial for initial page loads, offering a more immediate user experience.
+
+## The Evolution and Shift to Client-Side Rendering
+
+Over the past decade, client-side rendering gained popularity due to the rise of JavaScript frameworks like React, Angular, and Vue.js. CSR allows for more dynamic and interactive user interfaces by handling most of the rendering on the client-side.
+
+However, CSR also introduced several challenges:
+
+- **Performance**: The initial load time can be slower, especially for users with poor network conditions, as the browser needs to download and execute JavaScript before rendering content.
+- **SEO**: Search engines historically had difficulty indexing content generated dynamically on the client-side.
+- **Complexity**: Managing state and ensuring smooth interactions across different browsers and devices added complexity to the development process.
+
+## Why SSR is Making a Comeback
+
+### 1. **Performance and Speed**
+
+SSR can significantly improve the perceived performance of a web application. Since the HTML is pre-rendered on the server, the content is visible almost immediately upon page load. This results in faster Time to First Paint (TTFP) and Time to Interactive (TTI), which are critical metrics for user experience.
+
+### 2. **Improved SEO**
+
+For content-heavy websites, SEO is crucial. While search engines have improved at indexing client-side rendered pages, SSR ensures that the content is readily available for indexing. This makes SSR a more reliable option for ensuring that content is visible to search engines and improving search rankings.
+
+### 3. **Better User Experience**
+
+SSR can improve the overall user experience by reducing the "white screen" effect that sometimes occurs with CSR. Users get content faster, and the page feels more responsive, leading to higher user satisfaction.
+
+### 4. **Modern Frameworks and Tools**
+
+Modern web development frameworks and tools have evolved to make SSR easier and more accessible. Frameworks like Next.js, Nuxt.js, and Sapper provide built-in support for SSR, enabling developers to harness its benefits without sacrificing the conveniences of client-side frameworks. Additionally, the concept of **hybrid rendering** allows developers to choose between SSR and CSR on a per-page basis, offering flexibility in how content is delivered.
+
+### 5. **Edge Computing and Serverless Architectures**
+
+The rise of edge computing and serverless architectures has also contributed to SSR's resurgence. By rendering content closer to the user, either through edge servers or serverless functions, developers can achieve low-latency responses and faster content delivery, enhancing the benefits of SSR.
+
+## Conclusion
+
+The resurgence of server-side rendering is a testament to the continuous evolution of web development. While client-side rendering is still widely used and offers its own advantages, SSR is regaining its place as a critical tool for delivering fast, SEO-friendly, and user-centric web experiences. As developers, understanding when and how to leverage SSR can be key to building high-performing and resilient web applications in today's competitive environment.
+
+-EG

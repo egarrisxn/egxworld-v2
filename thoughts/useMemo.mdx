@@ -1,0 +1,71 @@
+---
+title: Optimizing Performance with useMemo
+description: Avoid unnecessary recalculations and improve performance in React applications.
+slug: useMemo
+type: thought
+date: June 15, 2024
+---
+
+```jsx
+import React, {useState, useMemo} from 'react'
+
+function ExpensiveComponent({count}) {
+  const computeExpensiveValue = (num) => {
+    console.log('Computing...')
+    let result = 0
+    for (let i = 0; i < 1e6; i++) {
+      result += num * i
+    }
+    return result
+  }
+
+  // Memoize the expensive computation
+  const expensiveValue = useMemo(() => computeExpensiveValue(count), [count])
+
+  return (
+    <div>
+      <p>Computed Value: {expensiveValue}</p>
+    </div>
+  )
+}
+
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <div>
+      <ExpensiveComponent count={count} />
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  )
+}
+
+export default App
+```
+
+### Understanding `useMemo`
+
+The `useMemo` Hook helps optimize performance by memoizing values, preventing unnecessary recalculations during renders. Introduced in React 16.8, it improves efficiency by:
+
+- **Memoizing Values**: `useMemo` takes a function and an array of dependencies. It recomputes the value only when dependencies change.
+
+### Example
+
+In the example above, `useMemo` is used to optimize a costly computation. Without it, `computeExpensiveValue` runs on every render. With `useMemo`, it recalculates only when `count` changes, boosting performance.
+
+### Benefits
+
+- **Performance Optimization**: Avoids redundant calculations.
+- **Prevents Unnecessary Renders**: Helps avoid re-renders of components that depend on memoized values.
+- **Efficient Resource Use**: Reduces computation and rendering overhead.
+
+### When to Use
+
+- **Expensive Calculations**: For costly operations or data transformations.
+- **Rendering Optimization**: To prevent unnecessary re-renders.
+
+### Conclusion
+
+`useMemo` is essential for enhancing React app performance by memoizing expensive computations and reducing unnecessary renders. Try it in your projects to see improvements in efficiency and responsiveness.
+
+-EG

@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--gap-half);
+  margin: 0;
+  padding: 0;
+}
+
+.avatar {
+  border: 50%;
+}
+
+.heading {
+  grid-column: auto;
+}
+
+.heading h1 {
+  font-size: 3rem;
+}
+
+.heading h2 {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.tech {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.techLink {
+  margin: 0 0.2rem;
+}

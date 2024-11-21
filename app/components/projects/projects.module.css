@@ -1,0 +1,11 @@
+.container {
+  max-width: var(--main-content);
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.seemore {
+  line-height: 1.5em;
+  font-size: 1.1rem;
+}

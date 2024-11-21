@@ -1,0 +1,13 @@
+.time {
+  padding: 0;
+  color: inherit;
+  display: flex;
+  flex-direction: row;
+  gap: 0.3em;
+  padding-left: 0.1em;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 1rem;
+}

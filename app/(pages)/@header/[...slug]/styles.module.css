@@ -1,0 +1,15 @@
+.list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: var(--gap-quarter);
+  color: var(--neutral);
+  a {
+    color: var(--neutral);
+    font-size: 1rem;
+    text-decoration: none;
+    &:hover {
+      color: var(--fg);
+    }
+  }
+}

@@ -1,0 +1,229 @@
+@import './syntax.css';
+@import './markdown.css';
+
+:root {
+  /* Typography */
+  --font-sans: var(--font-space_grotesk), -apple-system, BlinkMacSystemFont, 'Roboto',
+    'Helvetica Neue', sans-serif;
+  --font-mono: var(--font-roboto-mono), 'SFMono-Regular', 'Consolas', 'Liberation Mono', 'Menlo',
+    monospace;
+
+  /* Transitions */
+  --transition: 0.1s ease-in-out;
+  --transition-slow: 0.3s ease-in-out;
+
+  /* Spacing / Sizing */
+  --gap-small: 0.1rem;
+  --gap-quarter: 0.25rem;
+  --gap-half: 0.5rem;
+  --gap: 1rem;
+  --gap-double: 2rem;
+  --main-content: 48rem;
+  --radius: 8px;
+  --inline-radius: 6px;
+  --header-height: 48px;
+
+  /* Dark Mode */
+  --bg: hsl(205.3, 31.1%, 12%);
+  --bg-hover: hsla(205.3, 31.1%, 11%, 0.9);
+  --bg-2: hsl(0, 0%, 10%);
+  --fg: hsl(0, 0%, 95.3%);
+  --fg-hover: hsl(0, 0%, 97.3%);
+  --fg-2: hsl(0, 0%, 92%);
+  --neutral: hsl(0, 0%, 60%);
+  --neutral-tint: hsla(0, 0%, 100%, 0.5);
+  --neutral-2: hsl(0, 0%, 27%);
+  --neutral-3: hsl(0, 0%, 13%);
+  --selection: hsla(0, 0%, 100%, 0.88);
+  --link: hsl(216, 100%, 77%);
+
+  /* Syntax Highlighting */
+  --token: hsl(0, 0%, 60%);
+  --comment: hsl(0, 0%, 60%);
+  --keyword: hsl(0, 0%, 100%);
+  --name: hsl(0, 0%, 100%);
+  --highlight: hsl(0, 0%, 18%);
+
+  /* Fading */
+  --timing: 0.3s;
+  --fade-in: var(--timing) ease-in-out;
+}
+
+[data-theme='light'] {
+  /* Light Mode */
+  --bg: hsl(283, 100%, 98%);
+  --bg-hover: hsla(283, 100%, 99%, 0.9);
+  --bg-2: hsl(0, 0%, 96%);
+  --fg: hsl(0, 0%, 13.3%);
+  --fg-hover: hsl(0, 0%, 11.3%);
+  --fg-2: hsl(0, 0%, 13%);
+  --neutral: hsl(0, 0%, 39%);
+  --neutral-tint: hsla(0, 0%, 8%, 0.5);
+  --neutral-2: hsl(0, 0%, 87%);
+  --neutral-3: hsl(0, 0%, 94%);
+  --header-bg: hsla(0, 0%, 100%, 0.8);
+  --selection: hsla(0, 0%, 0%, 0.99);
+  --link: hsl(215, 51%, 54%);
+
+  /* Syntax Highlighting */
+  --token: hsl(0, 0%, 40%);
+  --comment: hsl(0, 0%, 60%);
+  --keyword: hsl(0, 0%, 0%);
+  --name: hsl(0, 0%, 20%);
+  --highlight: hsl(0, 0%, 92%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: var(--selection);
+  color: var(--bg);
+  text-shadow: none;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-size: 16px;
+  line-height: 1.5em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 110%;
+}
+
+body {
+  font-family: var(--font-sans);
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+p,
+li {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+@media only screen and (max-width: 768px) {
+  p,
+  li {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid var(--neutral-2);
+}
+
+blockquote {
+  margin: 0;
+  padding-left: 1rem;
+  border-left: 3px solid var(--neutral-2);
+  font-style: italic;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  line-height: inherit;
+  font-size: inherit;
+  border: none;
+}
+
+p a,
+article a,
+a.reset {
+  color: var(--link);
+  text-decoration: none;
+  transition:
+    background-color var(--transition),
+    color var(--transition);
+  outline: none;
+}
+
+p a:hover,
+article a:hover,
+a.reset:hover {
+  color: var(--link);
+}
+
+pre,
+code {
+  font-family: var(--font-mono);
+}
+
+summary {
+  outline: none;
+}
+
+details {
+  padding: var(--gap);
+  border-radius: var(--radius);
+  background: var(--bg-hover);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+table {
+  border: 1px solid var(--neutral);
+}
+
+td,
+th {
+  border: 1px solid var(--neutral);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

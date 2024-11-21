@@ -1,0 +1,65 @@
+---
+title: Enhancing User Experience with useTransition
+description: Improve user experience by prioritizing urgent updates with useTransition
+slug: useTransition
+type: thought
+date: Sept 21, 2024
+---
+
+```jsx
+import React, {useState, useTransition} from 'react'
+
+function SearchComponent() {
+  const [query, setQuery] = useState('')
+  const [isPending, startTransition] = useTransition()
+
+  const handleSearchChange = (e) => {
+    const value = e.target.value
+    setQuery(value)
+
+    // Delay state updates to prevent blocking UI interactions
+    startTransition(() => {
+      // Simulate a search process or fetch results
+      console.log('Searching for:', value)
+    })
+  }
+
+  return (
+    <div>
+      <input type='text' value={query} onChange={handleSearchChange} placeholder='Search...' />
+      {isPending ? <p>Loading...</p> : <p>Search for: {query}</p>}
+    </div>
+  )
+}
+
+export default SearchComponent
+```
+
+### Understanding useTransition
+
+useTransition is a Hook introduced in React 18 that helps improve the user experience by enabling you to prioritize updates. It allows you to distinguish between urgent updates (like typing in a text input) and less urgent ones (like filtering data or updating complex UI). With useTransition, you can defer non-urgent state updates without blocking the more critical ones, ensuring your app stays responsive during heavy operations.
+
+### What is useTransition?
+
+useTransition allows you to mark a state update as "non-urgent" and provides feedback on whether this update is still in progress. It's useful for tasks like filtering large datasets, updating components that are expensive to render, or deferring visual updates.
+
+### A Simple Example: useTransition
+
+In the example above, useTransition is used to prioritize updating the search input over the search results. The input remains responsive while the less critical search logic is delayed to avoid performance bottlenecks. The isPending state can be used to show a loading indicator or inform the user that the update is happening in the background.
+
+### Why Use useTransition?
+
+- User Experience: Keeps the UI responsive by allowing time-consuming updates to be handled in the background.
+- Performance: Prevents blocking the UI during complex updates, improving interaction smoothness.
+- Better Feedback: Provides the ability to display loading states for deferred updates, helping users understand what's happening.
+
+### When to Use
+
+- Slow Operations: When you need to perform heavy operations like filtering, sorting, or rendering complex components.
+- Prioritizing Updates: For situations where some UI updates are more critical than others, like form input handling versus background processing.
+
+### Conclusion
+
+useTransition is a valuable tool for enhancing user experience by deferring non-critical updates, keeping the UI fast and responsive. It’s particularly helpful for apps with complex, heavy components or data processing. Start experimenting with useTransition to see how it can improve the performance of your React apps!
+
+-EG

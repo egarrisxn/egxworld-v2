@@ -1,0 +1,29 @@
+.socialButton {
+  user-select: none;
+  display: inline-flex;
+  border-radius: var(--radius);
+  padding: var(--gap);
+  color: var(--neutral-tint) !important;
+  background-color: transparent;
+  will-change: transform;
+  transition: all 0.1s cubic-bezier(0.01, 0.88, 0.93, 0.07);
+  line-height: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.socialButton:active,
+.socialButton:hover,
+.socialButton:focus-within {
+  color: var(--fg) !important;
+  background: var(--bg-hover) !important;
+  transition: all 200ms;
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .socialButton,
+  .socialButton:hover {
+    transition: none;
+  }
+}

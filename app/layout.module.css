@@ -1,0 +1,11 @@
+.wrapper {
+  position: relative;
+  height: 100%;
+  padding-bottom: var(--gap-double);
+}
+
+.main {
+  max-width: var(--main-content);
+  margin: 0 auto;
+  padding: 0 var(--gap);
+}

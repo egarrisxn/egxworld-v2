@@ -1,0 +1,17 @@
+.heading {
+  width: 100%;
+}
+
+.image {
+  margin: 0 0 0 -0.5rem;
+  padding: 0;
+  rotate: y -180deg;
+  position: absolute;
+}
+
+.text {
+  padding-left: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+  position: relative;
+}

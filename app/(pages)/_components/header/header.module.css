@@ -1,0 +1,23 @@
+.icon {
+  color: var(--neutral-1) !important;
+  padding: var(--gap-half) !important;
+}
+
+.icon:active,
+.icon:hover,
+.icon:focus-within {
+  outline: none;
+  color: var(--fg) !important;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: var(--gap) 0;
+}
+
+.header {
+  max-width: var(--main-content);
+  display: flex;
+  align-items: center;
+}

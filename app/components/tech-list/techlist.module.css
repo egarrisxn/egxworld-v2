@@ -1,0 +1,9 @@
+.techList {
+  margin: var(--gap-half);
+  padding: var(--gap-half);
+  list-style: square;
+}
+
+.techList li > span {
+  font-weight: 800;
+}

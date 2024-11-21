@@ -1,0 +1,24 @@
+.button {
+  display: flex;
+  align-items: center;
+  padding: var(--gap-quarter) var(--gap-half);
+  height: var(--gap-double);
+  font-weight: 500;
+  background: var(--neutral-tint);
+  color: var(--fg);
+  border-radius: var(--radius);
+  border: none;
+  user-select: none;
+  cursor: pointer;
+  transition:
+    background-color var(--transition),
+    color var(--transition),
+    border var(--transition);
+}
+
+.button:hover,
+.button:focus {
+  border: 1px solid var(--fg-2);
+  color: var(--fg-2);
+  background: var(--neutral-2);
+}

@@ -1,0 +1,36 @@
+.sort {
+  height: 40px;
+  border: none;
+  border-radius: var(--inline-radius);
+  background: var(--neutral-3);
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0 var(--gap-half);
+  color: var(--fg);
+}
+
+.filterSettings {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--gap);
+}
+
+@media (max-width: 768px) {
+  .filterSettings {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .filterSettings .sort {
+    width: 100%;
+  }
+}
+
+.items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: -12px;
+}

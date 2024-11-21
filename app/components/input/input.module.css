@@ -1,0 +1,30 @@
+.input {
+  margin: 0;
+  padding: 0 var(--gap-half);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  font-size: 1rem;
+  border-radius: var(--inline-radius);
+  border: var(--gap-small) solid var(--neutral);
+  background: var(--bg);
+  color: var(--fg);
+  transition: border-color var(--transition);
+}
+
+.input:focus {
+  border-color: 1.5px solid var(--fg);
+  background: var(--bg-hover);
+  outline: none;
+}
+
+.input:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 1px var(--fg);
+}
+
+.input:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}

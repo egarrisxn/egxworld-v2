@@ -1,0 +1,53 @@
+---
+title: Optimizing Performance with useCallback
+description: How useCallback helps prevent unnecessary re-renders in React components.
+slug: useCallback
+type: thought
+date: Aug 16, 2024
+---
+
+```jsx
+import React, {useState, useCallback} from 'react'
+
+function Counter() {
+  const [count, setCount] = useState(0)
+
+  const handleIncrement = useCallback(() => {
+    setCount((prevCount) => prevCount + 1)
+  }, [])
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={handleIncrement}>Click me</button>
+    </div>
+  )
+}
+
+export default Counter
+```
+
+### Understanding the Power of useCallback
+
+useCallback is one of the performance optimization hooks introduced in React 16.8, along with useMemo. It is primarily used to memoize functions and prevent them from being redefined unnecessarily on every render. This can be particularly useful when passing callback functions as props to child components, ensuring the function remains stable across renders unless its dependencies change.
+
+### What is useCallback?
+
+useCallback is a React Hook that returns a memoized version of a callback function. This is useful when a function is passed as a prop to child components, which may otherwise trigger unnecessary re-renders if the function reference changes between renders.
+
+### A Simple Example: useCallback
+
+In the example above, we use useCallback to memoize the handleIncrement function. The handleIncrement function is wrapped in useCallback, with an empty dependency array, meaning the function will only be created once and will not change unless the dependencies (which there are none here) do.
+
+### Why Use useCallback?
+
+While useCallback might not always be necessary, it can be helpful when dealing with components that re-render frequently. When you pass functions as props to other components, React may re-render those components even if their props haven’t changed. Using useCallback helps prevent this by ensuring the same function instance is passed between renders unless its dependencies change.
+
+- Performance Benefits: It can help improve performance by avoiding unnecessary re-renders in child components.
+- Stable References: Ensures that functions passed as props or used in effects have stable references.
+
+### Conclusion
+
+useCallback is a powerful tool for optimizing React performance, especially when working with memoized functions in functional components. By controlling when functions are recreated, you can prevent unnecessary re-renders and improve the efficiency of your applications. Understanding and applying useCallback will help you write cleaner, more performant React code. Try incorporating it into your projects to master performance optimization in React!
+
+-EG
