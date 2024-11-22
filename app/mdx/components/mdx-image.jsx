@@ -2,7 +2,7 @@ import NextImage from 'next/image'
 
 export function MDXImage({src, alt}) {
   let widthFromSrc, heightFromSrc
-  const url = new URL(src, 'http://egxworld.net')
+  const url = new URL(src, 'https://egxworld.net')
   const widthParam = url.searchParams.get('w') || url.searchParams.get('width')
   const heightParam = url.searchParams.get('h') || url.searchParams.get('height')
   if (widthParam) {

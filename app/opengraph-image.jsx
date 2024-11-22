@@ -7,9 +7,9 @@ export const runtime = 'edge'
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default async function () {
-  const fontData = await fetch(
-    new URL('./fonts/ScoreboardTypeItalicPersonal-nRWO0.ttf', import.meta.url),
-  ).then((res) => res.arrayBuffer())
+  const fontData = await fetch(new URL('./fonts/JoesBurger-mLE3a.ttf', import.meta.url)).then(
+    (res) => res.arrayBuffer(),
+  )
 
   return new ImageResponse(
     (
@@ -21,7 +21,7 @@ export default async function () {
           alignItems: 'center',
           background: '#000000',
           flexDirection: 'column',
-          border: '8px solid #DCDCDC',
+          border: '6px solid #DCDCDC',
           borderRadius: '4px',
         }}
       >
@@ -73,7 +73,7 @@ export default async function () {
     {
       fonts: [
         {
-          name: 'ScoreboardTypeItalic',
+          name: 'JoesBurger',
           data: fontData,
           weight: 500,
         },
