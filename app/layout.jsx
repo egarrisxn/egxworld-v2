@@ -21,27 +21,27 @@ const roboto_mono = Roboto_Mono({
 export const metadata = {
   metadataBase: new URL('https://egxworld.net'),
   title: {
-    template: '%s | EGXWORLD',
-    default: 'EGXWORLD',
+    template: '%s | egxworld',
+    default: 'egxworld',
   },
   description: 'Full Stack Developer. Digital Product Designer.',
   referrer: 'origin-when-cross-origin',
   keywords: [
     'eg, ethan_g, ethang, ethan-g, egarrisxn, egxworld, website, portfolio, projects, about, nextjs, next, next14, shadcn-ui, shadcn/ui, radixui, tailwindcss, javascript, react, fullstack, full-stack, webdeveloper, web-developer',
   ],
-  creator: {name: 'Ethan Garrison', url: 'https://github.com/egarrisxn'},
+  creator: 'Ethan G. (https://github.com/egarrisxn)',
   openGraph: {
-    title: 'EGXWORLD',
-    url: 'https://egxworld.net',
-    siteName: 'EGXWORLD',
-    locale: 'en_US',
     type: 'website',
+    siteName: 'egxworld.net',
+    title: 'egxworld',
+    url: 'https://egxworld.net',
+    locale: 'en_US',
     images: [
       {
         url: `https://egxworld.net/opengraph-image`,
         width: 1200,
         height: 630,
-        alt: 'EGXWORLD',
+        alt: 'egxworld',
       },
     ],
   },
@@ -54,8 +54,8 @@ export const metadata = {
     },
   },
   twitter: {
-    title: 'EGXWORLD',
     card: 'summary_large_image',
+    title: 'egxworld',
     creator: '@eg__xo',
   },
   icons: {

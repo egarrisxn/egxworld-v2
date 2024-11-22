@@ -5,7 +5,7 @@ export function getMetadata({
   hidden,
   date,
   lastModified,
-  author = 'Ethan G',
+  author = 'Ethan G.',
   path,
 }) {
   const domain =
@@ -17,7 +17,7 @@ export function getMetadata({
 
   return (
     <>
-      {title.indexOf('EGXWORLD') > -1 ? (
+      {title.indexOf('egxworld') > -1 ? (
         <title>{title}</title>
       ) : (
         <title>{`${title} - ${author}`}</title>
@@ -31,15 +31,15 @@ export function getMetadata({
       <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       <meta httpEquiv='Content-Language' content='en' />
       <meta name='twitter:card' content='summary_large_image' />
-      <meta name='twitter:site' content='Showcase' />
-      <meta property='og:site_name' content='Showcase' />
-      <meta name='apple-mobile-web-app-title' content='Showcase' />
+      <meta name='twitter:site' content='egxworld.net' />
+      <meta property='og:site_name' content='egxworld.net' />
+      <meta name='apple-mobile-web-app-title' content='egxworld.net' />
       <meta name='author' content={author} />
       <meta property='og:type' content='website' />
       <meta charSet='utf-8' />
       <meta property='og:locale' content='en' />
-      <link rel='manifest' href='/favicon/manifest.json' />
-      <meta name='theme-color' content='#000000' />
+      <link rel='manifest' href='/manifest.json' />
+      <meta name='theme-color' content='#152028' />
       <link rel='apple-touch-icon' sizes='180x180' href='/favicon/apple-touch-icon.png' />
       <link
         rel='icon'

@@ -7,9 +7,9 @@ export const runtime = 'edge'
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default async function () {
-  const fontData = await fetch(new URL('./fonts/kaisei-tokumin-bold.ttf', import.meta.url)).then(
-    (res) => res.arrayBuffer(),
-  )
+  const fontData = await fetch(
+    new URL('./fonts/ScoreboardTypeItalicPersonal-nRWO0.ttf', import.meta.url),
+  ).then((res) => res.arrayBuffer())
 
   return new ImageResponse(
     (
@@ -19,9 +19,10 @@ export default async function () {
           height: '100%',
           width: '100%',
           alignItems: 'center',
-          fontWeight: 800,
-          background: '#000',
+          background: '#000000',
           flexDirection: 'column',
+          border: '8px solid #DCDCDC',
+          borderRadius: '4px',
         }}
       >
         <div
@@ -35,9 +36,8 @@ export default async function () {
         >
           <span
             style={{
-              fontSize: 20,
-              fontWeight: 100,
-              color: 'white',
+              fontSize: 25,
+              color: '#FFFFFF',
               padding: '10px 0px 0px 10px',
             }}
           >
@@ -51,7 +51,7 @@ export default async function () {
             alignItems: 'center',
             justifyContent: 'center',
             width: '100%',
-            color: 'white',
+            color: '#FFFFFF',
             textAlign: 'center',
             height: 630 - 50 - 50,
             maxWidth: 1000,
@@ -61,7 +61,7 @@ export default async function () {
           EG
           <span
             style={{
-              color: 'blue',
+              color: '#87CEEB',
             }}
           >
             X
@@ -73,7 +73,7 @@ export default async function () {
     {
       fonts: [
         {
-          name: 'Inter',
+          name: 'ScoreboardTypeItalic',
           data: fontData,
           weight: 500,
         },

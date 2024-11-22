@@ -1,5 +1,5 @@
-import getThoughts from './lib/get-thoughts'
 import getPosts from './lib/get-posts'
+import getThoughts from './lib/get-thoughts'
 
 export default async function sitemap() {
   const posts = await getPosts()
