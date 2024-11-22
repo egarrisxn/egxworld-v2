@@ -23,7 +23,7 @@ export default async function ({params}) {
     return new Response('Missing title', {status: 400})
   }
 
-  const fontData = fetch(new URL('../../../fonts/kaisei-tokumin-bold.ttf', import.meta.url)).then(
+  const fontData = fetch(new URL('../../../fonts/JoesBurger-mLE3a.ttf', import.meta.url)).then(
     (res) => res.arrayBuffer(),
   )
 
@@ -35,9 +35,10 @@ export default async function ({params}) {
           height: '100%',
           width: '100%',
           alignItems: 'center',
-          fontWeight: 800,
-          background: '#000',
+          background: '#000000',
           flexDirection: 'column',
+          border: '6px solid #DCDCDC',
+          borderRadius: '4px',
         }}
       >
         <div
@@ -51,9 +52,8 @@ export default async function ({params}) {
         >
           <span
             style={{
-              fontSize: 30,
-              fontWeight: 700,
-              color: 'fuchsia',
+              fontSize: 25,
+              color: '#FFFFFF',
               padding: '10px 0px 0px 10px',
             }}
           >
@@ -63,8 +63,7 @@ export default async function ({params}) {
             <div
               style={{
                 fontSize: 30,
-                fontWeight: 700,
-                color: 'yellow',
+                color: '#87CEEB',
                 padding: '10px 10px 0px 0px',
               }}
             >
@@ -80,7 +79,7 @@ export default async function ({params}) {
             justifyContent: 'center',
             width: '100%',
             padding: '0 50px',
-            color: 'white',
+            color: '#FFFFFF',
             textAlign: 'center',
             height: 630 - 50 - 50,
             maxWidth: 1000,
@@ -89,8 +88,7 @@ export default async function ({params}) {
           {title && (
             <div
               style={{
-                fontSize: 65,
-                fontWeight: 800,
+                fontSize: 60,
                 marginBottom: 40,
                 lineHeight: 1,
               }}
@@ -105,7 +103,7 @@ export default async function ({params}) {
       ...size,
       fonts: [
         {
-          name: 'Inter',
+          name: 'JoesBurger',
           data: await fontData,
           style: 'normal',
           weight: 500,

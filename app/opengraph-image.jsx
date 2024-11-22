@@ -75,6 +75,7 @@ export default async function () {
         {
           name: 'JoesBurger',
           data: fontData,
+          style: 'normal',
           weight: 500,
         },
       ],
