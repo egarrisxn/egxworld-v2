@@ -23,7 +23,7 @@ export default async function ({params}) {
     return new Response('Missing title', {status: 400})
   }
 
-  const fontData = fetch(new URL('../../../fonts/JoesBurger-mLE3a.ttf', import.meta.url)).then(
+  const fontData = fetch(new URL('../../../fonts/kaisei-tokumin-bold.ttf', import.meta.url)).then(
     (res) => res.arrayBuffer(),
   )
 
@@ -103,7 +103,7 @@ export default async function ({params}) {
       ...size,
       fonts: [
         {
-          name: 'JoesBurger',
+          name: 'KaiseiTokumin',
           data: await fontData,
           style: 'normal',
           weight: 500,
