@@ -1,24 +1,36 @@
 ---
-title: Displaying Time on a Webpage.
-description: A simple JavaScript snippet to show the current time on a webpage.
-slug: display-time
+title: Hello, World.
+description: Hello World in React. A Fun Introduction.
+slug: hello-world
 type: thought
-date:Dec 1, 2024
+date: April 20, 2024
 ---
 
-```js
-function updateTime() {
-  const timeElement = document.getElementById('time')
-  const now = new Date()
-  timeElement.textContent = now.toLocaleTimeString()
+```jsx
+import React from 'react'
+
+function HelloWorld() {
+  return (
+    <div>
+      <h1>Hello, World!</h1>
+      <p>Welcome to React. Let’s build something amazing together!</p>
+    </div>
+  )
 }
 
-updateTime()
-setInterval(updateTime, 1000)
+export default HelloWorld
 ```
 
-## Displaying Time on a Webpage
+## Hello World in React: A Fun Introduction
 
-JavaScript makes it simple to display dynamic content on a webpage, such as the current time. In this snippet, we use the Date object and the toLocaleTimeString method to fetch and display the current time. By combining this with setInterval, the time updates automatically every second.
+Welcome to the wonderful world of React! If you’re just starting out with this popular JavaScript library, creating a simple "Hello World" component is a fantastic way to dip your toes in. Not only does it give you a taste of React's component-based architecture, but it also sets the stage for more complex projects. Let's get started!
+
+## What is React?
+
+React is a powerful library for building user interfaces, especially single-page applications where you need a smooth and interactive user experience. It allows you to create reusable UI components that can handle state and lifecycle events efficiently.
+
+## Creating Your First Component
+
+To kick things off, we’ll build a basic React component that displays "Hello World" on the screen. See above example.
 
 -EG
