@@ -5,8 +5,20 @@ import path from 'path'
 
 const thirdPartyPosts = [
   {
+    title: '#10 | The JavaScript Battle',
+    description: 'React, Vue, & Angular',
+    body: '',
+    date: '2024-12-03',
+    slug: 'the-javascript-battle-react-vue-and-angular',
+    tags: [],
+    lastModified: 0,
+    isThirdParty: true,
+    href: 'https://egxblog.net/blog/the-javascript-battle-react-vue-and-angular',
+    type: 'post',
+  },
+  {
     title: '#9 | My Journey Thus Far',
-    description: 'The Growth, Challenges, & Hope.',
+    description: 'The Growth, Challenges, & Hope',
     body: '',
     date: '2024-09-27',
     slug: 'my-journey-thus-far',
