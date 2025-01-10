@@ -10,7 +10,7 @@ export function getMetadata({
 }) {
   const domain =
     process.env.NODE_ENV === 'production'
-      ? 'https://egxworld.net'
+      ? 'https://egxo.dev'
       : process.env.NEXT_PUBLIC_VERCEL_URL
         ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
         : 'http://localhost:3000'
@@ -31,9 +31,9 @@ export function getMetadata({
       <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       <meta httpEquiv='Content-Language' content='en' />
       <meta name='twitter:card' content='summary_large_image' />
-      <meta name='twitter:site' content='egxworld.net' />
-      <meta property='og:site_name' content='egxworld.net' />
-      <meta name='apple-mobile-web-app-title' content='egxworld.net' />
+      <meta name='twitter:site' content='egxo.dev' />
+      <meta property='og:site_name' content='egxo.dev' />
+      <meta name='apple-mobile-web-app-title' content='egxo.dev' />
       <meta name='author' content={author} />
       <meta property='og:type' content='website' />
       <meta charSet='utf-8' />

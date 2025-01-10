@@ -19,7 +19,7 @@ const roboto_mono = Roboto_Mono({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://egxworld.net'),
+  metadataBase: new URL('https://egxo.dev'),
   title: {
     template: '%s | egxworld',
     default: 'egxworld',
@@ -32,13 +32,13 @@ export const metadata = {
   creator: 'Ethan G. (https://github.com/egarrisxn)',
   openGraph: {
     type: 'website',
-    siteName: 'egxworld.net',
+    siteName: 'egxo.dev',
     title: 'egxworld',
-    url: 'https://egxworld.net',
+    url: 'https://egxo.dev',
     locale: 'en_US',
     images: [
       {
-        url: `https://egxworld.net/opengraph-image`,
+        url: `https://egxo.dev/opengraph-image`,
         width: 1200,
         height: 630,
         alt: 'egxworld',
@@ -59,7 +59,7 @@ export const metadata = {
     creator: '@eg__xo',
   },
   icons: {
-    shortcut: 'https://egxworld.net/favicons/favicon.ico',
+    shortcut: 'https://egxo.dev/favicons/favicon.ico',
   },
 }
 

@@ -1,4 +1,4 @@
-# EGXWORLD V2
+# egxo.dev
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![GitHub repo size](https://img.shields.io/github/repo-size/egarrisxn/egxworld-v2) ![GitHub last commit](https://img.shields.io/github/last-commit/egarrisxn/egxworld-v2)
 
@@ -6,7 +6,7 @@
 
 A 'minimalist' approach to a website and my current portfolio.
 
-![egxworldv2v2](https://github.com/user-attachments/assets/39019abb-85cf-4912-99df-fcec32813581)
+![egxworldv2](https://github.com/user-attachments/assets/39019abb-85cf-4912-99df-fcec32813581)
 
 ## Technologies
 

@@ -13,7 +13,7 @@ const thirdPartyPosts = [
     tags: [],
     lastModified: 0,
     isThirdParty: true,
-    href: 'https://egxblog.net/blog/the-javascript-battle-react-vue-and-angular',
+    href: 'https://egxo.fyi/blog/the-javascript-battle-react-vue-and-angular',
     type: 'post',
   },
   {
@@ -25,7 +25,7 @@ const thirdPartyPosts = [
     tags: [],
     lastModified: 0,
     isThirdParty: true,
-    href: 'https://egxblog.net/blog/my-journey-thus-far',
+    href: 'https://egxo.fyi/blog/my-journey-thus-far',
     type: 'post',
   },
   {
@@ -37,7 +37,7 @@ const thirdPartyPosts = [
     tags: [],
     lastModified: 0,
     isThirdParty: true,
-    href: 'https://egxblog.net/blog/the-evolution-of-web-development',
+    href: 'https://egxo.fyi/blog/the-evolution-of-web-development',
     type: 'post',
   },
   {
@@ -49,7 +49,7 @@ const thirdPartyPosts = [
     tags: [],
     lastModified: 0,
     isThirdParty: true,
-    href: 'https://egxblog.net/blog/a-social-presence-for-developers',
+    href: 'https://egxo.fyi/blog/a-social-presence-for-developers',
     type: 'post',
   },
   {
@@ -61,7 +61,7 @@ const thirdPartyPosts = [
     tags: [],
     lastModified: 0,
     isThirdParty: true,
-    href: 'https://egxblog.net/blog/the-rise-of-serverless-architecture',
+    href: 'https://egxo.fyi/blog/the-rise-of-serverless-architecture',
     type: 'post',
   },
   {
@@ -73,7 +73,7 @@ const thirdPartyPosts = [
     tags: [],
     lastModified: 0,
     isThirdParty: true,
-    href: 'https://egxblog.net/blog/the-headless-cms',
+    href: 'https://egxo.fyi/blog/the-headless-cms',
     type: 'post',
   },
   {
@@ -85,7 +85,7 @@ const thirdPartyPosts = [
     tags: [],
     lastModified: 0,
     isThirdParty: true,
-    href: 'https://egxblog.net/blog/navigating-the-storm',
+    href: 'https://egxo.fyi/blog/navigating-the-storm',
     type: 'post',
   },
   {
@@ -97,7 +97,7 @@ const thirdPartyPosts = [
     tags: [],
     lastModified: 0,
     isThirdParty: true,
-    href: 'https://egxblog.net/blog/a-paradigm-shift',
+    href: 'https://egxo.fyi/blog/a-paradigm-shift',
     type: 'post',
   },
   {
@@ -110,7 +110,7 @@ const thirdPartyPosts = [
     tags: [],
     lastModified: 0,
     isThirdParty: true,
-    href: 'https://egxblog.net/blog/build-in-public',
+    href: 'https://egxo.fyi/blog/build-in-public',
     type: 'post',
   },
   {
@@ -122,7 +122,7 @@ const thirdPartyPosts = [
     tags: [],
     lastModified: 0,
     isThirdParty: true,
-    href: 'https://egxblog.net/blog/here-goes-nothing',
+    href: 'https://egxo.fyi/blog/here-goes-nothing',
     type: 'post',
   },
 ]

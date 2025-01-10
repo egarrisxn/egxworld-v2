@@ -5,7 +5,7 @@ export const metadata = {
   title: 'Thoughts Page',
   description: 'Some random thoughts I have',
   alternates: {
-    canonical: 'https://egxworld.net/thoughts',
+    canonical: 'https://egxo.dev/thoughts',
   },
 }
 

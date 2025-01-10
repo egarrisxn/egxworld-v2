@@ -8,7 +8,7 @@ export const metadata = {
   title: 'Projects',
   description: 'Projects.',
   alternates: {
-    canonical: 'https://egxworld.net/projects',
+    canonical: 'https://egxo.dev/projects',
   },
 }
 

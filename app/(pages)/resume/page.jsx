@@ -4,7 +4,7 @@ export const metadata = {
   title: 'Resume Page',
   description: 'Here is my resume.',
   alternates: {
-    canonical: 'https://egxworld.net/resume',
+    canonical: 'https://egxo.dev/resume',
   },
 }
 

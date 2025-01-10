@@ -6,7 +6,7 @@ export default function robots() {
         allow: ['/'],
       },
     ],
-    sitemap: 'https://egxworld.net/sitemap.xml',
-    host: 'https://egxworld.net',
+    sitemap: 'https://egxo.dev/sitemap.xml',
+    host: 'https://egxo.dev',
   }
 }

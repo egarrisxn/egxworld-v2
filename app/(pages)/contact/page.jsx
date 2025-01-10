@@ -8,7 +8,7 @@ export const metadata = {
   title: 'Contact Page',
   description: 'How you can contact me',
   alternates: {
-    canonical: 'https://egxworld.net/contact',
+    canonical: 'https://egxo.dev/contact',
   },
 }
 

@@ -1,8 +1,8 @@
 {
-  "name": "egxworld-v2",
+  "name": "egxo.dev",
   "version": "1.0.0",
   "description": "My new take on a website / portfolio / whatever you would call it. Powered with Next.js, MDX, React+RSC, & more!",
-  "homepage": "http://egxworld.net",
+  "homepage": "http://egxo.dev",
   "author": "Ethan G",
   "license": "MIT",
   "private": true,

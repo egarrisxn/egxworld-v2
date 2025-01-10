@@ -92,7 +92,7 @@ const Projects = [
     image: '/projects/egxworldv1.png',
   },
   {
-    title: 'EGXBLOG',
+    title: 'egxo.fyi',
     description:
       'My personal blog I created as an attempt to write a little more. Spun up by the new Next.js, Sanity, JavaScript, Tailwind CSS, shadcn/ui, & deployed with Vercel.',
     href: 'https://github.com/egarrisxn/egxblog',

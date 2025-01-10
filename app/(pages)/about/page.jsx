@@ -25,7 +25,7 @@ export const metadata = {
   title: 'About Page',
   description: 'A little bit about me',
   alternates: {
-    canonical: 'https://egxworld.net/about',
+    canonical: 'https://egxo.dev/about',
   },
 }
 
