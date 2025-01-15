@@ -17,7 +17,7 @@ export function getMetadata({
 
   return (
     <>
-      {title.indexOf('egxworld') > -1 ? (
+      {title.indexOf('egxo.dev') > -1 ? (
         <title>{title}</title>
       ) : (
         <title>{`${title} - ${author}`}</title>

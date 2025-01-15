@@ -24,7 +24,7 @@ const Projects = [
     description:
       'An all-in-one productivity web application to help keep your days in order! Spun up with Next.js, Supabase, TypeScript, Tailwind CSS, zod, & deployed with Vercel.',
     href: 'https://github.com/egarrisxn/egxprod',
-    years: ['2024'],
+    years: ['2025'],
     type: 'project',
     image: '/projects/egxprod.png',
   },
