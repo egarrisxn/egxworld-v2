@@ -8,11 +8,13 @@ export async function generateStaticParams() {
   return thoughts.map((thought) => ({slug: thought.slug}))
 }
 
-export async function generateMetadata({params}) {
+export async function generateMetadata(props) {
+  const params = await props.params
   const thought = (await getThoughts()).find((p) => p?.slug === params.slug)
+
   return {
-    title: thought?.title,
-    description: thought?.description,
+    title: thought?.title || 'Default Title',
+    description: thought?.description || 'Default Description',
   }
 }
 
@@ -33,7 +35,10 @@ async function getData({slug}) {
   }
 }
 
-export default async function ThoughtSlugLayout({children, params}) {
+export default async function ThoughtSlugLayout(props) {
+  const params = await props.params
+
+  const {children} = props
   const {previous, next, title, date} = await getData(params)
 
   return (

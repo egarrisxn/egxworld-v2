@@ -7,7 +7,7 @@ export default function Navigation({previous, next}) {
       <div className={styles.previous}>
         {previous && (
           <Link href={`./${previous.slug}`}>
-            <div className={styles.title}>← Older</div>
+            <div className={styles.title}>←</div>
             {previous.title}
           </Link>
         )}
@@ -16,7 +16,7 @@ export default function Navigation({previous, next}) {
       <div className={styles.next}>
         {next && (
           <Link href={`./${next.slug}`}>
-            <div className={styles.title}>Newer →</div>
+            <div className={styles.title}>→</div>
             {next.title}
           </Link>
         )}

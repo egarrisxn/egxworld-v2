@@ -8,7 +8,7 @@ export default function ContentFooter() {
       <footer className={styles.footer}>
         <p>
           Thank you for your time! Follow me on{' '}
-          <Link external href='https://x.com/eg_xo_'>
+          <Link external href='https://x.com/eg__xo'>
             X
           </Link>
           .

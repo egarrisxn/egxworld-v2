@@ -8,11 +8,13 @@ export async function generateStaticParams() {
   return posts.map((post) => ({slug: post.slug}))
 }
 
-export const generateMetadata = async ({params}) => {
+export async function generateMetadata(props) {
+  const params = await props.params
   const post = (await getPosts()).find((p) => p?.slug === params.slug)
+
   return {
-    title: post?.title,
-    description: post?.description,
+    title: post?.title || 'Default Title',
+    description: post?.description || 'Default Description',
   }
 }
 
@@ -26,16 +28,17 @@ async function getData({slug}) {
 
   const post = posts[postIndex]
 
-  const {...rest} = post
-
   return {
     previous: posts[postIndex + 1] || null,
     next: posts[postIndex - 1] || null,
-    ...rest,
+    ...post,
   }
 }
 
-export default async function PostSlugLayout({children, params}) {
+export default async function PostSlugLayout(props) {
+  const params = await props.params
+
+  const {children} = props
   const {previous, next, title, date, lastModified} = await getData(params)
 
   const lastModifiedDate = lastModified

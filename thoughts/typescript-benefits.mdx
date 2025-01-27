@@ -1,0 +1,28 @@
+---
+title: TypeScript Benefits in JavaScript Projects.
+description: A quickie highlighting the advantages of type safety.
+slug: typescript-benefits
+type: thought
+date: Jan 16, 2025
+---
+
+```tsx
+function greet(name: string): string {
+  return `Hello, ${name}!`
+}
+
+// Example usage
+const greeting = greet('TypeScript')
+console.log(greeting) // Output: Hello, TypeScript!
+
+// This will throw an error at compile-time:
+// const invalidGreeting = greet(42)
+```
+
+## Benefits of Using TypeScript
+
+TypeScript brings static typing to JavaScript, helping developers catch errors early in the development process. In the example above, the greet function expects a string as an argument. Passing a value of the wrong type, such as a number, results in a compile-time error instead of a runtime bug.
+
+By adding types, you make your code self-documenting and easier to refactor as your project grows.
+
+-EG

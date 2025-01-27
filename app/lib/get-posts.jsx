@@ -5,6 +5,19 @@ import path from 'path'
 
 const thirdPartyPosts = [
   {
+    title: '#11 | TypeScript: The Future of JavaScript Development',
+    description:
+      'TypeScript is rapidly becoming the preferred language for JavaScript developers, offering enhanced productivity and scalability',
+    body: '',
+    date: '2025-01-27',
+    slug: 'the-future-of-javascript-typescript',
+    tags: [],
+    lastModified: 0,
+    isThirdParty: true,
+    href: 'https://egxo.fyi/blog/the-future-of-javascript-typescript',
+    type: 'post',
+  },
+  {
     title: '#10 | The JavaScript Battle',
     description: 'React, Vue, & Angular',
     body: '',

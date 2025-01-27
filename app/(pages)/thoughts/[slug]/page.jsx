@@ -8,7 +8,10 @@ export async function generateStaticParams() {
 }
 
 export default async function ThoughtSlugPage({params}) {
-  const thought = await getThought(params.slug)
+  const {slug} = await params
+
+  const thought = await getThought(slug)
   if (!thought) return notFound()
+
   return <BlogBody>{thought?.body}</BlogBody>
 }
