@@ -26,9 +26,9 @@ export default async function HomePage() {
           </Link>
         </nav>
         <h2>
-          Full Stack Developer & Digital Product Designer with a passion for learning and growth.
-          Constantly challenging myself to step out of my comfort zone and tackle new challenges.{' '}
-          <Link href='/about'>Learn more</Link>.
+          Full Stack Developer & Digital Product Designer looking to make a difference in the world
+          & the web. Constantly pushing myself to step out of my comfort zone and tackle new
+          challenges. <Link href='/about'>Learn more</Link>.
         </h2>
         <h3>
           Available for work //{' '}
