@@ -20,19 +20,19 @@ const Projects = [
     image: '/projects/unofficialmerch.png',
   },
   {
-    title: '.prod',
+    title: 'xprod',
     description:
       'An all-in-one productivity web application to help keep your days in order! Spun up with Next.js, Supabase, TypeScript, Tailwind CSS, zod, & deployed with Vercel.',
-    href: 'https://github.com/egarrisxn/egxprod',
+    href: 'https://github.com/egarrisxn/xprod',
     years: ['2025'],
     type: 'project',
     image: '/projects/egxprod.png',
   },
   {
-    title: 'Your Typed Website',
+    title: 'CC NextFolio',
     description:
       'A super sleek and clean website template just for you! Put together with Next.js, Content Collections, TypeScript, Tailwind CSS, zustand, & deployed with Vercel.',
-    href: 'https://github.com/egarrisxn/your-typed-website',
+    href: 'https://github.com/egarrisxn/cc-nextfolio',
     years: ['2024'],
     type: 'project',
     image: '/projects/yourtypedwebsite.png',
@@ -95,7 +95,7 @@ const Projects = [
     title: 'egxo.fyi',
     description:
       'My personal blog I created as an attempt to write a little more. Spun up by the new Next.js, Sanity, JavaScript, Tailwind CSS, shadcn/ui, & deployed with Vercel.',
-    href: 'https://github.com/egarrisxn/egxblog',
+    href: 'https://github.com/egarrisxn/egxo-fyi',
     years: ['2023'],
     type: 'project',
     image: '/projects/egxblog.png',
