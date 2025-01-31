@@ -21,8 +21,8 @@ const roboto_mono = Roboto_Mono({
 export const metadata = {
   metadataBase: new URL('https://egxo.dev'),
   title: {
-    template: '%s | egxworld',
-    default: 'egxworld',
+    template: '%s | egxo.dev',
+    default: 'egxo.dev',
   },
   description: 'Full Stack Developer. Digital Product Designer.',
   referrer: 'origin-when-cross-origin',
@@ -33,7 +33,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     siteName: 'egxo.dev',
-    title: 'egxworld',
+    title: 'egx0.dev',
     url: 'https://egxo.dev',
     locale: 'en_US',
     images: [
