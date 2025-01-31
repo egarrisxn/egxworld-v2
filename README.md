@@ -1,18 +1,18 @@
 # egxo.dev
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![GitHub repo size](https://img.shields.io/github/repo-size/egarrisxn/egxworld-v2) ![GitHub last commit](https://img.shields.io/github/last-commit/egarrisxn/egxworld-v2)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![GitHub repo size](https://img.shields.io/github/repo-size/egarrisxn/egxo-dev) ![GitHub last commit](https://img.shields.io/github/last-commit/egarrisxn/egxo-dev)
 
 ## Description
 
-A 'minimalist' approach to a website and my current portfolio.
+My website/portfolio.
 
 ![egxworldv2](https://github.com/user-attachments/assets/39019abb-85cf-4912-99df-fcec32813581)
 
 ## Technologies
 
-- Next.js 14
-- MDX (Markdown)
-- React with Server Components
+- Next.js
+- MDX
+- React
 - JavaScript
 - Vercel
 - Etc.
