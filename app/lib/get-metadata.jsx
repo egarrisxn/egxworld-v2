@@ -41,12 +41,7 @@ export function getMetadata({
       <link rel='manifest' href='/manifest.json' />
       <meta name='theme-color' content='#152028' />
       <link rel='apple-touch-icon' sizes='180x180' href='/favicon/apple-touch-icon.png' />
-      <link
-        rel='icon'
-        type='image/svg+xml'
-        href='/favicon/favicon-32x32.png'
-        key='dynamic-favicon'
-      />
+      <link rel='icon' type='image/x-icon' href='/favicons/favicon.ico' key='dynamic-favicon' />
 
       {date && <meta name='date' content={date} />}
       {lastModified && <meta name='last-modified' content={lastModified} />}

@@ -1,7 +1,7 @@
 import {ImageResponse} from 'next/og'
 
-export const alt = 'A'
-export const size = {width: 1200, height: 600}
+export const alt = ''
+export const size = {width: 1200, height: 630}
 export const contentType = 'image/png'
 export const runtime = 'edge'
 
@@ -23,8 +23,8 @@ export default async function ({params}) {
     return new Response('Missing title', {status: 400})
   }
 
-  const fontData = fetch(new URL('../../../fonts/kaisei-tokumin-bold.ttf', import.meta.url)).then(
-    (res) => res.arrayBuffer(),
+  const fontData = fetch(new URL('../../../fonts/Inter-Medium.ttf', import.meta.url)).then((res) =>
+    res.arrayBuffer(),
   )
 
   return new ImageResponse(
@@ -103,7 +103,7 @@ export default async function ({params}) {
       ...size,
       fonts: [
         {
-          name: 'KaiseiTokumin',
+          name: 'InterMedium',
           data: await fontData,
           style: 'normal',
           weight: 500,

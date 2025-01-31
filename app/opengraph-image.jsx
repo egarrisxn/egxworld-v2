@@ -1,14 +1,14 @@
 import {ImageResponse} from 'next/og'
 
-export const size = {width: 1200, height: 600}
+export const size = {width: 1200, height: 630}
 export const alt = ''
 export const contentType = 'image/png'
 export const runtime = 'edge'
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default async function () {
-  const fontData = await fetch(new URL('./fonts/JoesBurger-mLE3a.ttf', import.meta.url)).then(
-    (res) => res.arrayBuffer(),
+  const fontData = await fetch(new URL('./fonts/Inter-Medium.ttf', import.meta.url)).then((res) =>
+    res.arrayBuffer(),
   )
 
   return new ImageResponse(
@@ -41,7 +41,7 @@ export default async function () {
               padding: '10px 0px 0px 10px',
             }}
           >
-            MMXXIV
+            MMXXV
           </span>
         </div>
         <div
@@ -58,22 +58,21 @@ export default async function () {
             fontSize: 100,
           }}
         >
-          EG
+          egxo
           <span
             style={{
               color: '#87CEEB',
             }}
           >
-            X
+            .dev
           </span>
-          WORLD
         </div>
       </div>
     ),
     {
       fonts: [
         {
-          name: 'JoesBurger',
+          name: 'InterMedium',
           data: fontData,
           style: 'normal',
           weight: 500,

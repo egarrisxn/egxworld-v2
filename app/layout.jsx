@@ -29,22 +29,8 @@ export const metadata = {
   keywords: [
     'eg, ethan_g, ethang, ethan-g, egarrisxn, egxworld, website, portfolio, projects, about, nextjs, next, next14, shadcn-ui, shadcn/ui, radixui, tailwindcss, javascript, react, fullstack, full-stack, webdeveloper, web-developer',
   ],
-  creator: 'Ethan G. (https://github.com/egarrisxn)',
-  openGraph: {
-    type: 'website',
-    siteName: 'egxo.dev',
-    title: 'egx0.dev',
-    url: 'https://egxo.dev',
-    locale: 'en_US',
-    images: [
-      {
-        url: `https://egxo.dev/opengraph-image`,
-        width: 1200,
-        height: 630,
-        alt: 'egxworld',
-      },
-    ],
-  },
+  creator: 'https://egxo.dev.',
+
   robots: {
     index: true,
     follow: true,
@@ -53,13 +39,42 @@ export const metadata = {
       follow: true,
     },
   },
+  openGraph: {
+    siteName: 'egxo.dev',
+    title: 'egxo.dev',
+    description: 'Full Stack Developer. Digital Product Designer.',
+    url: 'https://egxo.dev',
+    images: [
+      {
+        url: `https://egxo.dev/opengraph-image`,
+        width: 1200,
+        height: 630,
+        alt: 'egxworld',
+      },
+    ],
+    type: 'website',
+    locale: 'en_US',
+  },
   twitter: {
     card: 'summary_large_image',
-    title: 'egxworld',
+    title: 'egxo.dev',
+    description: 'Full Stack Developer. Digital Product Designer.',
     creator: '@eg__xo',
+    site: '@eg__xo',
   },
   icons: {
-    shortcut: 'https://egxo.dev/favicons/favicon.ico',
+    icon: [
+      {url: '/favicon.ico', sizes: '48x48', type: 'image/x-icon'},
+      {url: '/favicon/favicon-32.png', sizes: '32x32', type: 'image/png'},
+      {url: '/favcion/favicon-16.png', sizes: '16x16', type: 'image/png'},
+    ],
+    apple: [{url: '/favicon/apple-touch-icon.png', sizes: '180x180', type: 'image/png'}],
+    other: [
+      {
+        rel: 'apple-touch-icon-precomposed',
+        url: '/favicon/apple-touch-icon-precomposed.png',
+      },
+    ],
   },
 }
 
