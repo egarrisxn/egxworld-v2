@@ -87,7 +87,7 @@ const Projects = [
     description:
       'My first portfolio / website / whatever you would like to call it. Powered by Next.js, JavaScript, Tailwind CSS, shadcn/ui, & deployed with Vercel.',
     href: 'https://github.com/egarrisxn/egxworld-v1',
-    years: ['2023'],
+    years: ['2023', '2024'],
     type: 'project',
     image: '/projects/egxworldv1.png',
   },
@@ -96,15 +96,15 @@ const Projects = [
     description:
       'My personal blog I created as an attempt to write a little more. Spun up by the new Next.js, Sanity, JavaScript, Tailwind CSS, shadcn/ui, & deployed with Vercel.',
     href: 'https://github.com/egarrisxn/egxo-fyi',
-    years: ['2023'],
+    years: ['2023', '2024'],
     type: 'project',
     image: '/projects/egxblog.png',
   },
   {
-    title: 'Tech Forum 2023',
+    title: 'The Tech Forum',
     description:
       'A forum application designed in a CMS style, demonstrating the CRUD principles. This app is built with Express, MySQL, Handlebars, Bootstrap, & deployed with Heroku.',
-    href: 'https://github.com/egarrisxn/mvc-tech-forum',
+    href: 'https://github.com/egarrisxn/mvc-tech-forum-2023',
     years: ['2023'],
     type: 'project',
     image: '/projects/mvctechforum.png',
