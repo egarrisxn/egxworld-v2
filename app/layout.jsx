@@ -40,16 +40,16 @@ export const metadata = {
     },
   },
   openGraph: {
-    siteName: 'egxo.dev',
     title: 'egxo.dev',
     description: 'Full Stack Developer. Digital Product Designer.',
     url: 'https://egxo.dev',
+    siteName: 'egxo.dev',
     images: [
       {
-        url: `https://egxo.dev/opengraph-image`,
+        url: '/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'egxworld',
+        alt: 'Full Stack Developer. Digital Product Designer.',
       },
     ],
     type: 'website',
@@ -61,20 +61,22 @@ export const metadata = {
     description: 'Full Stack Developer. Digital Product Designer.',
     creator: '@eg__xo',
     site: '@eg__xo',
+    images: [
+      {
+        url: '/twitter-image',
+        width: 1200,
+        height: 630,
+        alt: 'Full Stack Developer. Digital Product Designer.',
+      },
+    ],
   },
   icons: {
     icon: [
-      {url: '/favicon.ico', sizes: '48x48', type: 'image/x-icon'},
-      {url: '/favicon/favicon-32.png', sizes: '32x32', type: 'image/png'},
-      {url: '/favcion/favicon-16.png', sizes: '16x16', type: 'image/png'},
+      {url: '/favicon/favicon.ico', sizes: '32x32', type: 'image/x-icon'},
+      {url: '/favicon/icon.png', sizes: '96x96', type: 'image/png'},
+      {url: '/favicon/icon.svg', type: 'image/svg+xml'},
     ],
-    apple: [{url: '/favicon/apple-touch-icon.png', sizes: '180x180', type: 'image/png'}],
-    other: [
-      {
-        rel: 'apple-touch-icon-precomposed',
-        url: '/favicon/apple-touch-icon-precomposed.png',
-      },
-    ],
+    apple: [{url: '/favicon/apple-icon.png', sizes: '180x180', type: 'image/png'}],
   },
 }
 
